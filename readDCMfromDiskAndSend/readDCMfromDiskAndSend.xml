@@ -9,10 +9,10 @@ What the channel does:&#xd;
 &#xd;
 Configuration guidance:&#xd;
 source:&#xd;
-- by default reads from C:\mirth\readDCMfromDiskAndSend\input and moves processed files to C:\mirth\readDCMfromDiskAndSend\processed&#xd;
+- by default reads from C:\mirth\wrapPdf2DCM\input and moves processed files to C:\mirth\wrapPdf2DCM\processed&#xd;
 -- change the folders if needed&#xd;
 - sends DICOM via C-STORE to host defined on destinations tab, so be sure to change these based on your requirements</description>
-  <revision>2</revision>
+  <revision>3</revision>
   <sourceConnector version="4.5.2">
     <metaDataId>0</metaDataId>
     <name>sourceConnector</name>
@@ -60,7 +60,7 @@ source:&#xd;
         <queueBufferSize>1000</queueBufferSize>
       </sourceConnectorProperties>
       <scheme>FILE</scheme>
-      <host>C:/mirth/readDCMfromDiskAndSend/input</host>
+      <host>C:/mirth/wrapPdf2DCM/input</host>
       <fileFilter>*.dcm</fileFilter>
       <regex>false</regex>
       <directoryRecursion>false</directoryRecursion>
@@ -73,7 +73,7 @@ source:&#xd;
       <passive>true</passive>
       <validateConnection>true</validateConnection>
       <afterProcessingAction>MOVE</afterProcessingAction>
-      <moveToDirectory>C:/mirth/readDCMfromDiskAndSend/processed</moveToDirectory>
+      <moveToDirectory>C:/mirth/wrapPdf2DCM/processed</moveToDirectory>
       <moveToFileName>${originalFilename}</moveToFileName>
       <errorReadingAction>NONE</errorReadingAction>
       <errorResponseAction>AFTER_PROCESSING</errorResponseAction>
@@ -256,7 +256,7 @@ return;</undeployScript>
     <metadata>
       <enabled>true</enabled>
       <lastModified>
-        <time>1753885122236</time>
+        <time>1754231975586</time>
         <timezone>Europe/Helsinki</timezone>
       </lastModified>
       <pruningSettings>
