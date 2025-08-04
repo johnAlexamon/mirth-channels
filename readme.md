@@ -11,3 +11,7 @@ This Mirth Connect channel reads `.dcm` files from disk and sends them to a conf
 
 
 ### You can use these two channels together to wrap pdf files and send them to a PACS
+
+Place Your JAR File in the Right Location
+Recommended: MIRTH_HOME/custom-lib/ (e.g., /opt/mirth-connect/custom-lib/ or C:\Program Files\Mirth Connect\custom-lib\)
+Restart the Mirth Connect service (not just the Administrator UI).
